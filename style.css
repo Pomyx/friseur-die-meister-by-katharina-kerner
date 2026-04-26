@@ -521,3 +521,36 @@ line-height:1.75;
 }
 
 }
+
+.logo-with-image{
+display:flex;
+align-items:center;
+gap:14px;
+}
+
+.logo-with-image img{
+width:46px;
+height:46px;
+object-fit:contain;
+display:block;
+}
+
+.logo-with-image span{
+font-family:"Playfair Display",serif;
+font-size:28px;
+font-weight:700;
+letter-spacing:1px;
+color:#d4af37;
+}
+
+@media(max-width:900px){
+.logo-with-image img{
+width:42px;
+height:42px;
+}
+
+.logo-with-image span{
+font-size:22px;
+white-space:nowrap;
+}
+}
