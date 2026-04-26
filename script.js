@@ -1,1 +1,8 @@
-console.log("Friseur Die Meister Website Loaded");
+const menuToggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+if (menuToggle && menu) {
+  menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+}
