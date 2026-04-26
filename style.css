@@ -336,10 +336,16 @@ font-size:28px;
 .menu-toggle{
 display:flex;
 flex-direction:column;
-gap:5px;
+justify-content:center;
+align-items:center;
+gap:6px;
+width:34px;
+height:34px;
 background:none;
 border:0;
 cursor:pointer;
+position:relative;
+z-index:1001;
 }
 
 .menu-toggle span{
@@ -347,6 +353,20 @@ width:28px;
 height:2px;
 background:white;
 display:block;
+transition:0.3s ease;
+transform-origin:center;
+}
+
+.menu-toggle.active span:nth-child(1){
+transform:translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2){
+opacity:0;
+}
+
+.menu-toggle.active span:nth-child(3){
+transform:translateY(-8px) rotate(-45deg);
 }
 
 .menu{
