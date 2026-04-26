@@ -4,26 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Friseur Die Meister by Katharina Kerner | Balingen</title>
+  <meta name="description" content="Friseur Die Meister by Katharina Kerner in Balingen. Exklusive Haarkunst, moderne Schnitte, Coloration, Styling und persönliche Beratung.">
+
   <link rel="icon" type="image/png" href="kk_logo.png">
-  
-  <title>Friseur Die Meister by Katharina Kerner</title>
-  <meta name="description" content="Friseur Die Meister by Katharina Kerner in Balingen. Exklusive Haarkunst, Styling, Coloration und persönliche Beratung.">
+  <link rel="apple-touch-icon" href="kk_logo.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=8">
+  <link rel="stylesheet" href="style.css?v=9">
 </head>
 
 <body>
 
 <header class="site-header">
   <nav class="navbar">
-    <a href="#home" class="logo logo-with-image">
-  <img src="kk_logo.png" alt="Katharina Kerner Logo">
-  <span>Friseur Die Meister</span>
-</a>
+
+    <a href="index.html#home" class="logo logo-with-image" aria-label="Friseur Die Meister Startseite">
+      <img src="kk_logo.png" alt="Katharina Kerner Logo">
+      <span>Friseur Die Meister</span>
+    </a>
 
     <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">
       <span></span>
@@ -35,22 +37,24 @@
       <li><a href="index.html#home">Home</a></li>
       <li><a href="index.html#salon">Salon</a></li>
       <li><a href="index.html#leistungen">Leistungen</a></li>
+      <li><a href="preise.html">Preise</a></li>
       <li><a href="kontakt.html">Kontakt</a></li>
     </ul>
 
     <a href="tel:+4974338440" class="nav-btn">Termin</a>
+
   </nav>
 </header>
 
 <main id="home">
 
-  <section class="hero-video">
+  <section class="hero-video" aria-label="Friseur Die Meister">
     <video class="hero-video__media" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1600">
       <source src="assets/salon-hero.mp4" type="video/mp4">
     </video>
 
     <div class="hero-video__overlay">
-      <p class="eyebrow">Balingen · Luxury Hair Salon</p>
+      <p class="eyebrow">Balingen · Friseur Salon</p>
       <h1>Friseur Die Meister</h1>
       <p class="subtitle">by Katharina Kerner</p>
       <a href="tel:+4974338440" class="btn">Termin vereinbaren</a>
@@ -60,20 +64,24 @@
   <section id="salon" class="intro-section">
     <div class="section-inner">
       <p class="section-label">Willkommen</p>
-      <h2>Exklusive Haarkunst im Herzen von Balingen</h2>
+      <h2>Haarkunst mit Stil, Ruhe und persönlicher Beratung</h2>
       <p>
-        Bei Friseur Die Meister by Katharina Kerner stehen hochwertige Beratung,
-        moderne Schnitttechniken, Colorationen und ein stilvolles Salon-Erlebnis
-        im Mittelpunkt.
+        Bei Friseur Die Meister by Katharina Kerner stehen moderne Schnitttechniken,
+        hochwertige Colorationen und ein gepflegtes Salon-Erlebnis im Mittelpunkt.
+        Wir nehmen uns Zeit für Beratung, Stil und ein Ergebnis, das zu Ihnen passt.
       </p>
     </div>
   </section>
 
   <section id="leistungen" class="banner-section services-banner">
     <div>
-      <span>Services</span>
+      <span>Leistungen</span>
       <h2>Cut · Color · Styling</h2>
-      <p>Damen- und Herrenfrisuren, Balayage, Coloration, Pflege und individuelles Styling.</p>
+      <p>
+        Damen- und Herrenfrisuren, Coloration, Balayage, Pflege,
+        Styling und individuelle Beratung.
+      </p>
+      <a href="preise.html" class="btn btn-secondary">Preise ansehen</a>
     </div>
   </section>
 
@@ -93,14 +101,13 @@
       <div>
         <h3>Öffnungszeiten</h3>
         <p>
-          Montag: geschlossen<br>
-Dienstag: 08:30–12:00, 13:30–18:00<br>
-Mittwoch: 08:30–12:00, 13:30–18:00<br>
-Donnerstag: 08:30–18:00<br>
-Freitag: 08:30–12:00, 13:30–18:00<br>
-Samstag: 08:30–13:00<br>
-Sonntag: geschlossen<br>
-          
+          Mo geschlossen<br>
+          Di 08:30–12:00 · 13:30–18:00<br>
+          Mi 08:30–12:00 · 13:30–18:00<br>
+          Do 08:30–18:00<br>
+          Fr 08:30–12:00 · 13:30–18:00<br>
+          Sa 08:30–13:00<br>
+          So geschlossen
         </p>
       </div>
 
@@ -111,8 +118,15 @@ Sonntag: geschlossen<br>
     <div class="section-inner">
       <p class="section-label">Kontakt</p>
       <h2>Besuchen Sie uns in Balingen</h2>
-      <p>Adresse, Route und Karte finden Sie auf unserer Kontaktseite.</p>
-      <a href="kontakt.html" class="btn">Zur Kontaktseite</a>
+      <p>
+        Adresse, Route und Karte finden Sie auf unserer Kontaktseite.
+        Für Termine erreichen Sie uns direkt telefonisch.
+      </p>
+
+      <div class="button-row">
+        <a href="tel:+4974338440" class="btn">Jetzt anrufen</a>
+        <a href="kontakt.html" class="btn btn-secondary">Kontaktseite</a>
+      </div>
     </div>
   </section>
 
@@ -128,6 +142,6 @@ Sonntag: geschlossen<br>
   </div>
 </footer>
 
-<script src="script.js?v=8"></script>
+<script src="script.js?v=9"></script>
 </body>
 </html>
