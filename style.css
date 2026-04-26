@@ -405,3 +405,43 @@ margin-bottom:70px;
 }
 
 }
+
+.footer-links{
+margin-top:14px;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:12px;
+font-size:13px;
+}
+
+.footer-links a{
+color:#d4af37;
+text-decoration:none;
+}
+
+.footer-links a:hover{
+color:white;
+}
+
+.subpage-hero{
+padding:180px 30px 90px;
+background:
+linear-gradient(rgba(0,0,0,0.62),rgba(0,0,0,0.82)),
+url("https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1600") center/cover no-repeat;
+text-align:center;
+}
+
+.subpage-hero h1{
+font-family:"Playfair Display",serif;
+font-size:clamp(48px,7vw,92px);
+line-height:1;
+margin-bottom:18px;
+}
+
+.subpage-hero p{
+font-size:18px;
+letter-spacing:5px;
+text-transform:uppercase;
+color:#ddd;
+}
