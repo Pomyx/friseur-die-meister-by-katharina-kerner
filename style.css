@@ -132,3 +132,35 @@ font-size:18px;
 }
 
 }
+
+.contact-box{
+margin-top:50px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+text-align:center;
+}
+
+.contact-box div{
+background:#1a1a1a;
+padding:30px;
+border-radius:14px;
+border:1px solid rgba(212,175,55,0.25);
+transition:0.3s;
+}
+
+.contact-box div:hover{
+transform:translateY(-6px);
+border-color:#d4af37;
+}
+
+.contact-box h3{
+margin-bottom:15px;
+color:#d4af37;
+font-size:22px;
+}
+
+.contact-box a{
+color:white;
+text-decoration:none;
+}
