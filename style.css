@@ -1,0 +1,134 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+background:#111;
+color:white;
+}
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 60px;
+background:rgba(0,0,0,0.55);
+backdrop-filter:blur(8px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+letter-spacing:2px;
+color:#d4af37;
+}
+
+.menu{
+display:flex;
+gap:35px;
+list-style:none;
+}
+
+.menu a{
+text-decoration:none;
+color:white;
+font-size:16px;
+transition:0.3s;
+}
+
+.menu a:hover{
+color:#d4af37;
+}
+
+.hero{
+height:100vh;
+background:url("https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1600") center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.overlay{
+background:rgba(0,0,0,0.45);
+padding:50px;
+border-radius:12px;
+}
+
+.overlay h1{
+font-size:62px;
+margin-bottom:15px;
+}
+
+.overlay p{
+font-size:22px;
+margin-bottom:30px;
+color:#ddd;
+}
+
+.btn{
+display:inline-block;
+padding:14px 34px;
+background:#d4af37;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:40px;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+background:white;
+}
+
+.info{
+padding:100px 30px;
+max-width:900px;
+margin:auto;
+text-align:center;
+}
+
+.info h2{
+font-size:42px;
+margin-bottom:25px;
+color:#d4af37;
+}
+
+.info p{
+font-size:20px;
+line-height:1.7;
+color:#ddd;
+}
+
+@media(max-width:900px){
+
+.navbar{
+padding:20px;
+flex-direction:column;
+gap:15px;
+}
+
+.menu{
+flex-wrap:wrap;
+justify-content:center;
+gap:18px;
+}
+
+.overlay h1{
+font-size:38px;
+}
+
+.overlay p{
+font-size:18px;
+}
+
+}
