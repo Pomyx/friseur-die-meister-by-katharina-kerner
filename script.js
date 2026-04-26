@@ -4,5 +4,6 @@ const menu = document.querySelector(".menu");
 if (menuToggle && menu) {
   menuToggle.addEventListener("click", () => {
     menu.classList.toggle("active");
+    menuToggle.classList.toggle("active");
   });
 }
