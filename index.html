@@ -1,43 +1,125 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Friseur Die Meister by Katharina Kerner</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Friseur Die Meister by Katharina Kerner</title>
+  <meta name="description" content="Friseur Die Meister by Katharina Kerner in Balingen. Exklusive Haarkunst, Styling, Coloration und persönliche Beratung.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-<nav class="navbar">
-<div class="logo">Die Meister</div>
+<header class="site-header">
+  <nav class="navbar">
+    <a href="#home" class="logo">Die Meister</a>
 
-<ul class="menu">
-<li><a href="#">Home</a></li>
-<li><a href="#">Salon</a></li>
-<li><a href="#">Leistungen</a></li>
-<li><a href="#">Galerie</a></li>
-<li><a href="#">Kontakt</a></li>
-</ul>
-</nav>
+    <button class="menu-toggle" aria-label="Menü öffnen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#salon">Salon</a></li>
+      <li><a href="#leistungen">Leistungen</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+
+    <a href="tel:+4974338440" class="nav-btn">Termin</a>
+  </nav>
 </header>
 
-<section class="hero">
-<div class="overlay">
-<h1>Luxury Hair Experience</h1>
-<p>Friseur Die Meister by Katharina Kerner</p>
-<a href="tel:+4974338440" class="btn">Termin buchen</a>
-</div>
-</section>
+<main id="home">
 
-<section class="info">
-<h2>Willkommen</h2>
-<p>
-Exklusive Haarkunst, modernes Styling und persönliche Beratung
-im Herzen von Balingen.
-</p>
-</section>
+  <section class="hero-video">
+    <video class="hero-video__media" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1600">
+      <source src="assets/salon-hero.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-video__overlay">
+      <p class="eyebrow">Balingen · Luxury Hair Salon</p>
+      <h1>Friseur Die Meister</h1>
+      <p class="subtitle">by Katharina Kerner</p>
+      <a href="tel:+4974338440" class="btn">Termin vereinbaren</a>
+    </div>
+  </section>
+
+  <section id="salon" class="intro-section">
+    <div class="section-inner">
+      <p class="section-label">Willkommen</p>
+      <h2>Exklusive Haarkunst im Herzen von Balingen</h2>
+      <p>
+        Bei Friseur Die Meister by Katharina Kerner stehen hochwertige Beratung,
+        moderne Schnitttechniken, Colorationen und ein stilvolles Salon-Erlebnis
+        im Mittelpunkt.
+      </p>
+    </div>
+  </section>
+
+  <section id="leistungen" class="banner-section services-banner">
+    <div>
+      <span>Services</span>
+      <h2>Cut · Color · Styling</h2>
+      <p>Damen- und Herrenfrisuren, Balayage, Coloration, Pflege und individuelles Styling.</p>
+    </div>
+  </section>
+
+  <section class="info-section">
+    <div class="contact-box">
+
+      <div>
+        <h3>Adresse</h3>
+        <p>Bohnenbergerstraße 1<br>72336 Balingen</p>
+      </div>
+
+      <div>
+        <h3>Telefon</h3>
+        <p><a href="tel:+4974338440">07433 8440</a></p>
+      </div>
+
+      <div>
+        <h3>Öffnungszeiten</h3>
+        <p>
+          Di · Mi · Fr<br>
+          08:30–12:00 · 13:30–18:00<br><br>
+          Do 08:30–18:00<br>
+          Sa 08:30–13:00
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="kontakt" class="contact-section">
+    <div class="section-inner">
+      <p class="section-label">Kontakt</p>
+      <h2>Besuchen Sie uns in Balingen</h2>
+      <p>Für Termine und persönliche Beratung erreichen Sie uns telefonisch.</p>
+      <a href="tel:+4974338440" class="btn">Jetzt anrufen</a>
+    </div>
+
+    <div class="map-wrapper">
+      <iframe
+        src="https://www.google.com/maps?q=Bohnenbergerstraße%201,%2072336%20Balingen&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 Friseur Die Meister by Katharina Kerner. All rights reserved.</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
