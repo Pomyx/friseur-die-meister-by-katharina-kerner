@@ -1094,3 +1094,38 @@ padding:36px 24px;
 }
 
 }
+
+.map-consent{
+display:flex;
+align-items:center;
+justify-content:center;
+background:
+linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.86)),
+#171717;
+}
+
+.map-consent-box{
+max-width:620px;
+padding:34px 28px;
+text-align:center;
+}
+
+.map-consent-box h3{
+font-family:"Playfair Display",serif;
+font-size:34px;
+color:#d4af37;
+margin-bottom:16px;
+}
+
+.map-consent-box p{
+font-size:16px;
+line-height:1.7;
+color:#dddddd;
+margin-bottom:26px;
+}
+
+.map-load-btn{
+border:0;
+cursor:pointer;
+font-family:"Montserrat",Arial,sans-serif;
+}
