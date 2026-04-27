@@ -860,3 +860,21 @@ margin-top:-48px;
     margin-top:-78px;
   }
 }
+
+.services-banner{
+background:
+linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.70)),
+url("kerner_salon.jpg") center/cover no-repeat;
+}
+
+.about-hero{
+background:
+linear-gradient(rgba(0,0,0,0.62),rgba(0,0,0,0.86)),
+url("kerner_salon.jpg") center/cover no-repeat;
+}
+
+.about-banner{
+background:
+linear-gradient(rgba(0,0,0,0.52),rgba(0,0,0,0.76)),
+url("kerner_salon.jpg") center/cover no-repeat;
+}
