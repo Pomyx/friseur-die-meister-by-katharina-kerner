@@ -1149,3 +1149,14 @@ display:block;
     min-height:420px;
   }
 }
+
+.legal-hero{
+background:
+linear-gradient(rgba(0,0,0,0.68),rgba(0,0,0,0.88)),
+url("kerner_salon.jpg") center/cover no-repeat;
+filter:grayscale(1);
+}
+
+.legal-hero .section-inner{
+filter:none;
+}
