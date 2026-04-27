@@ -10,7 +10,7 @@
 <link rel="icon" type="image/png" href="kk_logo.png">
 <link rel="apple-touch-icon" href="kk_logo.png">
 
-<link rel="stylesheet" href="style.css?v=14">
+<link rel="stylesheet" href="style.css?v=15">
 </head>
 
 <body>
@@ -87,12 +87,15 @@ Sonntag: geschlossen
 
 </div>
 
-<div class="map-wrapper">
-<iframe
-src="https://www.google.com/maps?q=Bohnenbergerstraße%201,%2072336%20Balingen&output=embed"
-loading="lazy"
-referrerpolicy="no-referrer-when-downgrade">
-</iframe>
+<div class="map-wrapper map-consent" data-map-src="https://www.google.com/maps?q=Bohnenbergerstraße%201,%2072336%20Balingen&output=embed">
+  <div class="map-consent-box">
+    <h3>Google Maps anzeigen</h3>
+    <p>
+      Beim Laden der Karte werden Daten an Google übertragen.
+      Bitte bestätigen Sie, wenn Sie die Karte anzeigen möchten.
+    </p>
+    <button type="button" class="btn map-load-btn">Karte laden</button>
+  </div>
 </div>
 
 </section>
