@@ -13,20 +13,21 @@ if (menuToggle && menu) {
 document.addEventListener("DOMContentLoaded", function(){
   const mapConsent = document.querySelector(".map-consent");
 
-  if(mapConsent){
-    const button = mapConsent.querySelector(".map-load-btn");
-    const mapSrc = mapConsent.getAttribute("data-map-src");
-
-    button.addEventListener("click", function(){
-      const iframe = document.createElement("iframe");
-
-      iframe.src = mapSrc;
-      iframe.loading = "lazy";
-      iframe.referrerPolicy = "no-referrer-when-downgrade";
-      iframe.allowFullscreen = true;
-
-      mapConsent.innerHTML = "";
-      mapConsent.appendChild(iframe);
-    });
+  if(!mapConsent){
+    return;
   }
+
+  const button = mapConsent.querySelector(".map-load-btn");
+  const mapSrc = mapConsent.dataset.mapSrc;
+
+  if(!button || !mapSrc){
+    return;
+  }
+
+  button.addEventListener("click", function(){
+    mapConsent.classList.add("map-loaded");
+
+    mapConsent.innerHTML =
+      '<iframe src="' + mapSrc + '" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>';
+  });
 });
