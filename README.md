@@ -1,6 +1,6 @@
 # Friseur Die Meister by Katharina Kerner
 
-Premium business website created for a real hair salon in Balingen, Germany.
+Premium business website created for a hair salon in Balingen, Germany.
 
 A custom-built modern web presence focused on elegance, trust, speed and mobile usability.
 
